@@ -1,0 +1,23 @@
+// CONTENT CONTAINERS
+@mixin container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@mixin container-1520 {
+  @include container;
+
+  $padding: 15px;
+  max-width: 1520px + 2*$padding;
+  padding-left: $padding;
+  padding-right: $padding;
+}
+
+@mixin container-980 {
+  @include container;
+
+  $padding: 15px;
+  max-width: 980px + 2*$padding;
+  padding-left: $padding;
+  padding-right: $padding;
+}
